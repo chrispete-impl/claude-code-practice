@@ -1,0 +1,5 @@
+cust lookup - use acct_num not cust_id, cust_id has dupes
+SELECT * FROM Accounts WHERE acct_num = '000123'
+if balance looks wrong check pending_txn table first!!
+nightly batch runs 2am, dont run updates before 3
+ask DBA re: index on txn_date, queries slow
